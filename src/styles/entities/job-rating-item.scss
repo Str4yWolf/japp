@@ -1,0 +1,16 @@
+.job-rating-item {
+    margin: 1rem 0;
+
+    p {
+        background: powderblue;
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+        padding: 1rem;
+    }
+
+    button {
+        @extend %btn-medium;
+        @extend %btn-success;
+        @extend %form-btn;
+    }
+}

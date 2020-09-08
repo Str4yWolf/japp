@@ -1,0 +1,50 @@
+.job-item-detail-view {
+    @extend %bordered;
+    @extend %center-content;
+
+    .top-pane {
+        padding: 1rem 3vw 0.25rem 3vw;
+
+        & > * {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .main-pane {
+        @extend %format-inline-icons;
+
+        padding: 0 3vw 1rem 3vw;
+        text-align: left;
+
+        .subheader {
+            font-weight: 600;
+            text-align: center;
+            
+            .material-icons {
+                padding-left: 1rem;
+            }
+        }
+
+        .specs {
+            font-weight: 600;
+            padding: 1rem 0;
+        }
+    }
+
+}
+
+
+.item-edit-btn {
+    @extend %btn-medium;
+    @extend %btn-neutral;
+    @extend %form-btn;
+}
+
+.item-delete-btn {
+    @extend %btn-medium;
+    @extend %btn-danger;
+    @extend %form-btn;
+}

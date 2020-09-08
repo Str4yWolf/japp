@@ -1,0 +1,27 @@
+/* PARTIALS */
+@import 'styles/colors';
+@import 'styles/base';
+@import 'styles/buttons';
+
+/* COMPONENTS */
+@import 'styles/entities/job-item-preview.scss';
+@import 'styles/entities/job-item-detail-view.scss';
+@import 'styles/entities/job-rating-item.scss';
+@import 'styles/entities/rating-display.scss';
+@import 'styles/entities/status-dropdown.scss';
+
+/* CONTAINERS */
+@import 'styles/entities/job-item-form.scss';
+@import 'styles/entities/status-toggle.scss';
+@import 'styles/entities/step-divider.scss';
+
+/* OTHER ENTITIES */
+@import 'styles/entities/rating';
+@import 'styles/entities/top-pane.scss';
+
+/* MAIN */
+.App {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}

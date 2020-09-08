@@ -1,0 +1,45 @@
+/* SIZES */
+%btn-large {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+%btn-medium {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+/* SEMANTICS */
+%btn-success {
+    color: white;
+    background: mediumseagreen;
+    &:hover {
+        background: mediumaquamarine;
+    }
+}
+
+%btn-danger {
+    color: white;
+    background: crimson;
+    &:hover {
+        background: firebrick;
+    }
+}
+
+%btn-neutral {
+    color: white;
+    background: coral;
+    &:hover {
+        background: chocolate;
+    }
+}
+
+/* OTHER */
+%form-btn {
+    border: none;
+
+    margin: 0.2rem 0;
+    width: 100%;
+}

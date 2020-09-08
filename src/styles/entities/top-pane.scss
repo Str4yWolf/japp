@@ -1,0 +1,14 @@
+.top-pane {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &:hover {
+        background: #f8f8f8;
+    }
+
+    &:active {
+        background: #e8e8e8;
+    }
+}
