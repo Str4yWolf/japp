@@ -1,0 +1,38 @@
+.app-header {
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 4px 2px #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 0.25rem calc(2rem + 3vw) 0.25rem 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    span:first-child {
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+
+        &::first-letter {
+            color: red;
+        }
+    }
+
+    span:last-child {
+        a {
+            border-bottom: 3px solid white;
+            display: inline-block;
+            font-size: 1.15rem;
+            font-weight: 600;
+            padding: 0.25rem calc(0.5rem + 1vw);
+            text-decoration: none;
+            transition: border-color 0.5s ease-in-out;
+
+            &:hover {
+                border-bottom: 3px solid red;
+            }
+        }
+    }
+}

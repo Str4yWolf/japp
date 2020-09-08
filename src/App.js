@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import JobList from './containers/JobList.jsx'
 import JobItemForm from './containers/JobItemForm'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import api from './services/api/api'
 import './App.scss';
 
@@ -61,7 +63,7 @@ const App = () => {
 
   return (
     <div className="App">
-
+      <Header />
       { !showJobItemForm && <button
                               className="job-item-form-btn"
                               onClick={() => toggleJobItemForm()}
@@ -76,6 +78,7 @@ const App = () => {
                                             previousObject={jobEditData.jobItem}
                                             previousIndex={jobEditData.itemKey} /> }
       
+      <Footer />
     </div>
   );
 }

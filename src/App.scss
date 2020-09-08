@@ -4,6 +4,8 @@
 @import 'styles/buttons';
 
 /* COMPONENTS */
+@import 'styles/entities/app-header.scss';
+@import 'styles/entities/app-footer.scss';
 @import 'styles/entities/job-item-preview.scss';
 @import 'styles/entities/job-item-detail-view.scss';
 @import 'styles/entities/job-rating-item.scss';
@@ -23,5 +25,5 @@
 .App {
     display: flex;
     flex-direction: column;
-    margin: 5rem;
+    margin-top: 5rem;
 }

@@ -1,17 +1,26 @@
 describe("Visit website", () => {
-    it("should open website", () => {
+
+    // load website itself
+    beforeEach(() => {
         cy.visit('localhost:3000')
+    })
+
+    it("should contain appropriate title", () => {
+        cy.title().should('contain', 'Japp - Job Application Manager')
+    })
+    it("should open website", () => {
+        cy
             .get('.App')
             .should('be.visible')
     })
     it("should contain the labelled button to add jobs", () => {
-        cy.visit('localhost:3000')
+        cy
             .get('.job-item-form-btn')
             .should('be.visible')
             .contains('Add a job item')
     })
     it("should contain a job list", () => {
-        cy.visit('localhost:3000')
+        cy
             .get('.job-list')
             .should('be.visible')
     })
@@ -20,7 +29,7 @@ describe("Visit website", () => {
 
 describe("Add a job item", () => {
     it("should show a job item form after user opening it", () => {
-        cy.visit('localhost:3000')
+        cy
             .get('.job-item-form-btn')
             .click()
             .get('.job-item-form')
