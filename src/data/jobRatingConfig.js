@@ -1,1 +1,0 @@
-export const RATING_LINE_REGEX = /^([A-Za-z]{1,50}:(0|1)?[0-9])$/
