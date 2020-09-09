@@ -46,6 +46,7 @@ You can use this app to add, view, edit, and delete job item entries (CRUD opera
 - type (e.g., full-time)
 - date to start working
 - salary
+- link
 - notes
 - rating for custom categories on a scale from 0 to 10 and averaged total rating calculation.
 

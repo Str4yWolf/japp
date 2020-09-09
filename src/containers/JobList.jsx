@@ -14,7 +14,7 @@ const JobList = ({ jobs, updateCallback, editModeCallback }) => {
     let content
 
     if (!jobs) {
-        content = <span>no data</span>
+        content = <span className="centered">no data</span>
         
     } else {
         content = jobs.map((job, key) => {
