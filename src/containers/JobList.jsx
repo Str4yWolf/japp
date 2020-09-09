@@ -13,8 +13,8 @@ const JobList = ({ jobs, updateCallback, editModeCallback }) => {
 
     let content
 
-    if (!jobs) {
-        content = <span className="centered">no data</span>
+    if (!jobs || jobs.length === 0) {
+        content = <span className="centered">no job items</span>
         
     } else {
         content = jobs.map((job, key) => {
